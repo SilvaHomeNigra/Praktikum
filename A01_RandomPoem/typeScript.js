@@ -5,14 +5,17 @@ let object = ["Spaghetti", "ein Buch", "Zumba", "ganz schnell", "ein Spiel", "ti
 console.log("Subjekte:", subjekt);
 console.log("Prädikate:", predicate);
 console.log("Objekte:", object);
-// For-Schleife, um eine Laufvariable rückwärts zu zählen
+// For-Schleife
 for (let i = subjekt.length; i >= 1; i--) {
-    console.log(i); // Überprüfung der Ausgabe in der Konsole
+    console.log(i);
+    let verse = getVerse(subjekt, predicate, object);
+    console.log(verse);
 }
 function getVerse(subjekt, predicate, object) {
-    return "HalliHallo"; // Beispielhafter Rückgabewert
+    let vers = "";
+    return "HalliHallo";
 }
 // Aufruf der Funktion
-const generatedVerse = getVerse(subjekt, predicate, object);
-console.log("Generierter Vers:", generatedVerse);
+//const generatedVerse = getVerse(subjekt, predicate, object);
+//console.log("Generierter Vers:", generatedVerse);
 //# sourceMappingURL=typeScript.js.map

@@ -6,16 +6,21 @@ console.log("Subjekte:", subjekt);
 console.log("Prädikate:", predicate);
 console.log("Objekte:", object);
 
-// For-Schleife, um eine Laufvariable rückwärts zu zählen
+// For-Schleife
 for (let i = subjekt.length; i >= 1; i--) {
-    console.log(i); // Überprüfung der Ausgabe in der Konsole
+    console.log(i); 
+    let verse: string = getVerse(subjekt, predicate, object);
+    console.log(verse); 
 }
 
 function getVerse(subjekt:string[], predicate:string[], object:string[]): string {
-    return "HalliHallo"; // Beispielhafter Rückgabewert
+    let vers: string = "";
+    
+    
+    return "HalliHallo"; 
 }
 
 // Aufruf der Funktion
-const generatedVerse = getVerse(subjekt, predicate, object);
-console.log("Generierter Vers:", generatedVerse);
+//const generatedVerse = getVerse(subjekt, predicate, object);
+//console.log("Generierter Vers:", generatedVerse);
  
