@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ec8540;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #product-list {
+    padding: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .product input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .edit,
+  .delete {
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+  }
+  
+  .edit {
+    background-color: #2196F3;
+  }
+  
+  .delete {
+    margin-left: 10px;
+    background-color: #f30c10;
+  }
+  
