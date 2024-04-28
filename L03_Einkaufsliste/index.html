@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Einkaufsliste</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einkaufsliste</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Einkaufsliste</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Gekauft</th> <!-- Neue Spalte für das Markieren als gekauft -->
-                    <th>Artikel</th>
-                    <th>Menge</th>
-                    <th>Letzter Kaufsdatum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox" name="itemPurchased"></td> <!-- Checkbox für das Markieren als gekauft -->
-                    <td>Milch</td>
-                    <td>2</td>
-                    <td>2024-04-15</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="itemPurchased"></td> 
-                    <td>Brot</td>
-                    <td>1</td>
-                    <td>2024-04-14</td>
-                </tr>
-            </tbody>
-        </table>
-        <form>
-            <label for="newItem">Neu hinzufügen:</label>
-            <input type="text" id="newItem" name="newItem" placeholder="Artikel">
-            <input type="number" id="newQuantity" name="newQuantity" placeholder="Menge">
-            <button type="submit">Hinzufügen</button>
-        </form>
-      
+  <header>
+    <h1>Einkaufsliste</h1>
+    <button id="add-product">+ Produkt hinzufügen</button>
+  </header>
+
+
+  <div id="product-list">
+ 
+    <div class="product">
+      <input type="checkbox">
+      <div class="product-info">
+        <h3>Milch</h3>
+        <p>Menge: 1 Liter</p>
+        <p>Kommentar: fettarme Milch</p>
+      </div>
+      <button class="edit">Bearbeiten</button>
+      <button class="delete">Löschen</button>
     </div>
+
+    <div class="product">
+        <input type="checkbox">
+        <div class="product-info">
+          <h3>Milch</h3>
+          <p>Menge: 1 Liter</p>
+          <p>Kommentar: fettarme Milch</p>
+        </div>
+        <button class="edit">Bearbeiten</button>
+        <button class="delete">Löschen</button>
+      </div>
+      
+  </div>
+  
+
+  <script src="typeScript.js"></script>
 </body>
 </html>
